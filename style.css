@@ -7,6 +7,8 @@
 
 :root {
     --color-text:#fff;
+    --color-buy:#75992f;
+    --color-btn:#11af4b;
 }
 
 /* HEADER  */
@@ -107,6 +109,13 @@
     outline: none;
 }
 
+.navContent .btn:hover {
+    background-color: var(--color-btn);
+    transition: .2s ease-out;
+}
+
+/* SERVICES  */
+
 .services {
     padding: 30px 0px;
 }
@@ -145,12 +154,236 @@
 
 .btn-service a:hover {
     color: var(--color-text);
-    background-color: greenyellow;
+    background-color: var(--color-btn);
     transition: .3s ease-in-out;
 }
 
 .services .btn-service:hover {
     color: var(--color-text);
-    background-color: greenyellow;
+    background-color: var(--color-btn);
     transition: .3s ease-in-out;
 }
+
+
+.purchase {
+    background-color: var(--color-buy);
+    padding: 30px 0px;
+    color: var(--color-text);
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.organic {
+    padding: 0;
+}
+
+.purchase h3 {
+    font-size: 30px;
+    margin: 10px 0px;
+    font-weight: 400;
+}
+
+.purchase p {
+    font-size: 16px;
+    font-weight: 300;
+    padding:10px;
+}
+
+.purchase .btn-buy {
+    background: transparent;
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: 1px solid var(--color-text);
+    border-radius: 20px;
+    color: var(--color-text);
+    text-transform: uppercase;
+}
+
+.purchase .btn-buy:hover {
+    color: var(--color-text);
+    background-color: var(--color-btn);
+    transition: .2s ease-out;
+}
+
+
+/* TESTIMONIALS  */
+.testimonial {
+    padding: 30px 0px;
+}
+
+.card img {
+    height: 150px;
+    width: auto;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card-title {
+    margin-bottom: 20px;
+    letter-spacing: .25rem;
+    margin-top: 10px;
+}
+
+.card-footer {
+    padding: 10px;
+}
+
+.card-footer img{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.card-footer .btn-more{
+    border: none;
+    font-weight: bold;
+    background: transparent;
+}
+
+/* FOOTER  */
+
+.footer {
+  background-image: url('./hero_page.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px 0px;
+}
+
+.contact {
+
+}
+
+.input input {
+    background: transparent;
+    border: 1px solid var(--color-text);
+    border-radius: 3px;
+    outline: none;
+    padding: 8px;
+    margin-bottom: 15px;
+    color: var(--color-text);
+    margin-right: 10px;
+}
+
+.input input::placeholder {
+    color: var(--color-text);
+    font-style: italic;
+    font-weight: 200;
+    letter-spacing: .25rem;
+}
+
+.text-area input {
+    width: 98%;
+    background: transparent;
+    border: 1px solid var(--color-text);
+    color: var(--color-text);
+    line-height: 10rem;
+    overflow: hidden;
+    outline: none;
+    margin-bottom: 15px;
+    padding: 8px;
+}
+
+.text-area input::placeholder {
+    color: var(--color-text);
+    font-style: italic;
+    font-weight: 200;
+    letter-spacing: .25rem;
+}
+
+.btn-submit {
+    padding: 5px 40px;
+    background: var(--color-btn);
+    color: var(--color-text);
+    letter-spacing: .25rem;
+    border: none;
+    font-size: 14px;
+    transition: .2s ease-out;
+    border-radius: 5px;
+}
+
+.quick-links h5 {
+    margin-bottom: 10px;
+    color: var(--color-text);
+    letter-spacing: .25rem;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.quick-links ul li {
+    text-decoration: none;
+    border-bottom: 1px dotted #dedede;
+    padding: 10px;
+    color: var(--color-text);
+}
+
+.contact a {
+    color: var(--color-text);
+    outline: none;
+    text-decoration: none;
+}
+
+.social i {
+    padding: 10px;
+    justify-content: center;
+    color: var(--color-text);
+    font-size: 18px;
+    align-items: center;
+    margin: 10px 10px 10px 0px;
+    cursor: pointer;
+}
+
+.social i:hover {
+    color: var(--color-btn);
+    transition: .3s ease-out;
+}
+
+.news-letter p {
+    color: var(--color-text);
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 2rem;
+}
+.news-letter img {
+    cursor: pointer;
+}
+
+.news-letter input {
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid var(--color-text);
+    padding: 5px 40px 5px 0px;
+}
+
+.news-letter input::placeholder {
+    color: var(--color-text);
+    padding: 8px;
+    font-style: italic;
+}
+
+.news-letter .btn-subscribe {
+    background: var(--color-btn);
+    padding: 8px 25px 8px 8px;
+    color: var(--color-text);
+    border: none;
+    border-radius: 20px;
+}
+
+footer {
+    background: #1c201e;
+    padding: 15px;
+    text-align: center;
+    color: var(--color-text);
+    justify-content: center;
+}
+
+footer i {
+    font-size: 16px;
+}
+
